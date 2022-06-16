@@ -1,1 +1,4 @@
-<%= link_to "Catch !", pokemon_show_path %>
+
+<%= simple_form_for @pokemon do |f| %>
+    <%= f.button :submit, value: "Catch !" %>
+<% end %>
