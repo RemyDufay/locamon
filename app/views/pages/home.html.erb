@@ -10,7 +10,8 @@
 <div class="mypkms">
 
 <% @mypokemons.each do |pokemon|%>
-<%= image_tag pokemon.sprite_url, style: 'max-height: 150px; object-fit: contain;'  %>
+  <%= link_to(pokemon_path(pokemon)) do %>
+   <%= image_tag pokemon.sprite_url, style: 'max-height: 150px; object-fit: contain;', class: 'pkmn_min'  %>
+  <% end %>
 <% end %>
-
 </div>

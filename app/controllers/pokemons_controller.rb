@@ -23,7 +23,7 @@ class PokemonsController < ApplicationController
 
     catching = Catch.create!(user_id: current_user.id, pokemon_id: pokemon.id)
 
-    redirect_to pokemon_path(pokemon)
+    redirect_to user_catch_path(user_id: current_user, id: catching)
   end
 
 end
