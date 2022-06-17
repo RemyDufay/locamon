@@ -3,5 +3,8 @@ class PagesController < ApplicationController
 
     @pokemon = Pokemon.new
 
+    @mypokemons = current_user.pokemons
+
+
   end
 end

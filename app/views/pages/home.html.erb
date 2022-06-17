@@ -1,4 +1,16 @@
+<div><%= current_user.email %></div>
+
+
 
 <%= simple_form_for @pokemon do |f| %>
-    <%= f.button :submit, value: "Catch !" %>
+    <%= f.button :submit, value: "Catch !", class: 'btn btn-primary btn-lg mt-4' %>
 <% end %>
+
+
+<div class="mypkms">
+
+<% @mypokemons.each do |pokemon|%>
+<%= image_tag pokemon.sprite_url, style: 'max-height: 150px; object-fit: contain;'  %>
+<% end %>
+
+</div>
