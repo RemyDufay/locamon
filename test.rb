@@ -4,3 +4,6 @@ require 'poke-api-v2'
     description = PokeApi.get(pokedex: pkmn.name)
     puts pkmn.name
     puts description.description
+
+
+    # modif pour tester le push
